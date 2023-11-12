@@ -21,22 +21,22 @@ The outage began at 1:00pm(WAT), June 29, 2022 . This was caused by an unexpecte
 * 2:00 PM (WAT), July  6, 2022: After also using CDNs services to also alleviate the load, The incident was declared resolved, and the system was back to its normal self.
 
 
-#ROOT CAUSE AND RESOLUTION:
+## ROOT CAUSE AND RESOLUTION:
 The root cause of the issue was our servers. We had not planned yet for an increase in users. The incoming traffic surpassed our server’s capacity and our servers couldn’t process the increase in requestseffectively, so it crashed.
 
 The issue was fixed by allocating more resources (e.g., additional servers), which helps distribute the load effectively. Load balancing was also implemented to prevent overloading.
 
 
-#CORRECTIVE AND PREVENTIVE MEASURES:
+## CORRECTIVE AND PREVENTIVE MEASURES:
 
-#THINGS THAT CAN BE IMPROVED
+### THINGS THAT CAN BE IMPROVED
 * Load testing is essential: Regularly conduct load testing to identify and address potential bottlenecks before they lead to meltdowns
 * To mitigate the impact of traffic overload, optimize codes, images, and databases
 * There should be regular monitoring of website traffic and performance
 * Caching frequently accessed content can reduce the load on the server during high traffic periods
 * CDNs services can be used to cache and distribute content to servers located in various geographical regions.
 
-#TASKS THAT WERE DONE TO ADDRESS THE ISSUE
+### TASKS THAT WERE DONE TO ADDRESS THE ISSUE
 * The management team sourced for money to get the servers
 * The software engineering team connected the servers
 * Optimization of the codes, images and the databases was done
