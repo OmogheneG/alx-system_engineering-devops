@@ -9,6 +9,7 @@
 ### SUMMARY:
 The outage began at 1:00pm(WAT), June 29, 2022 . This was caused by an unexpected high volume of traffic that exceeded the capacity of our servers. We found out that the sudden interest in our site was due to a popular influencer, who mentioned our site on live tv. Because service was down, our users began to drop more complaints which made us pressured to fix the problem. After getting the resources we needed, we finally fixed the problem at 2:00pm(WAT), July 6, 2022.
 
+
 ## TIMELINE:
 * 10:00 AM (WAT), June 29, 2022: We notice an increase in the users of our site
 * 12:00 PM (WAT), June 29, 2022: Customer complaints start flooding in, initially about delays in page loading and interactions.
@@ -20,19 +21,25 @@ The outage began at 1:00pm(WAT), June 29, 2022 . This was caused by an unexpecte
 * 2:00 PM (WAT), July  6, 2022: After also using CDNs services to also alleviate the load, The incident was declared resolved, and the system was back to its normal self.
 
 
-## RESOLUTION:
-Root cause: The root cause of the issue was a software bug in the Node.js server that caused it to crash and become unresponsive.
+#ROOT CAUSE AND RESOLUTION:
+The root cause of the issue was our servers. We had not planned yet for an increase in users. The incoming traffic surpassed our server’s capacity and our servers couldn’t process the increase in requestseffectively, so it crashed.
 
-Resolution: The issue was resolved by fixing the software bug in the Node.js server.
+The issue was fixed by allocating more resources (e.g., additional servers), which helps distribute the load effectively. Load balancing was also implemented to prevent overloading.
 
-Corrective and preventative measures:
-To prevent similar incidents in the future, the following measures will be taken:
 
-The Node.js server will be updated to the latest stable version to ensure that any known issues are addressed.
-The monitoring system will be improved to provide more detailed alerts and enable quicker detection of issues.
-The development team will review their development practices to identify potential areas for improvement to prevent similar bugs from being introduced in the future.
-Specific tasks to address the issue include:
+#CORRECTIVE AND PREVENTIVE MEASURES:
 
-Updating the Node.js server to the latest stable version.
-Improving the monitoring system to provide more detailed alerts.
-Reviewing the development practices to identify potential areas for improvement.
+#THINGS THAT CAN BE IMPROVED
+* Load testing is essential: Regularly conduct load testing to identify and address potential bottlenecks before they lead to meltdowns
+* To mitigate the impact of traffic overload, optimize codes, images, and databases
+* There should be regular monitoring of website traffic and performance
+* Caching frequently accessed content can reduce the load on the server during high traffic periods
+* CDNs services can be used to cache and distribute content to servers located in various geographical regions.
+
+#TASKS THAT WERE DONE TO ADDRESS THE ISSUE
+* The management team sourced for money to get the servers
+* The software engineering team connected the servers
+* Optimization of the codes, images and the databases was done
+* Load testing was also done
+* We also started using CDNs services
+
