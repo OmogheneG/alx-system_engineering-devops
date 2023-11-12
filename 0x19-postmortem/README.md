@@ -7,30 +7,18 @@
 
 
 ### SUMMARY:
-Duration: The outage lasted from March 1st, 2023 at 2:00 PM UTC to March 2nd, 2023 at 9:00 AM UTC.
-
-Impact: The web assistant was completely down during the outage, resulting in users being unable to use both the chatbot and voice assistant components.
-
-Approximately 75% of users were affected.
-
-Root cause: The root cause of the outage was a software bug in the Node.js server that caused it to crash and become unresponsive.
+The outage began at 1:00pm(WAT), June 29, 2022 . This was caused by an unexpected high volume of traffic that exceeded the capacity of our servers. We found out that the sudden interest in our site was due to a popular influencer, who mentioned our site on live tv. Because service was down, our users began to drop more complaints which made us pressured to fix the problem. After getting the resources we needed, we finally fixed the problem at 2:00pm(WAT), July 6, 2022.
 
 ## TIMELINE:
-2:00 PM UTC: The issue was first detected when monitoring alerts signaled that the server was unresponsive.
-2:05 PM UTC: An engineer was alerted and began investigating the issue.
-2:15 PM UTC: The engineer determined that the server was down and began investigating potential causes.
-2:30 PM UTC: The engineer assumed the issue was related to a network outage and began investigating network connectivity.
-3:00 PM UTC: The engineer determined that the issue was not related to network connectivity and shifted focus to the Node.js server.
-4:00 PM UTC: The engineer discovered the software bug that was causing the server to crash and began working on a fix.
-9:00 PM UTC: The engineer completed the fix and tested it in a staging environment.
-10:00 PM UTC: The engineer deployed the fix to the production environment and began monitoring the server.
-9:00 AM UTC: The engineer confirmed that the fix was successful and closed the incident.
+*10:00 AM (WAT), June 29, 2022: We notice an increase in the users of our site
+*12:00 PM (WAT), June 29, 2022: Customer complaints start flooding in, initially about delays in page loading and interactions.
+*1:00 PM (WAT), June 29, 2022: Our servers became overwhelmed and crashed
+*4:00 PM (WAT), June 29, 2022: The management team begin to look for resources to solve the traffic overload issues
+*2:59 PM (WAT), July 1, 2022: We were able to get new servers
+*4:00 PM (WAT), July 1, 2022: The software engineering team began to connect the site to the servers.
+*10:00 AM (WAT), July 5, 2022: The software engineering team were done connecting the servers, optimizing codes, images and the databases.and also performing load testing.
+*2:00 PM (WAT), July  6, 2022: After also using CDNs services to also alleviate the load, The incident was declared resolved, and the system was back to its normal self.
 
-Misleading investigation/debugging paths that were taken: The engineer initially assumed that the issue was related to network connectivity and spent time
-
-investigating that before realizing it was a software issue with the server.
-
-Escalation: The incident was escalated to the development team responsible for the Node.js server.
 
 ## RESOLUTION:
 Root cause: The root cause of the issue was a software bug in the Node.js server that caused it to crash and become unresponsive.
